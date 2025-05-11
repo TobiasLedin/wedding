@@ -1,0 +1,86 @@
+.grid-container {
+    background-color: whitesmoke;
+}
+
+.navbar-container,
+.content-container {
+    background-color: rgb(236, 236, 165);
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        //max-width: 600px;          /* Caps the width at 600px */
+        width: 100%;              /* Takes full width up to max-width */
+        margin: 0.5rem auto;           /* Horizontally centers the container */
+        padding: 0;            /* Optional: Moves padding inside if you want spacing */
+    }
+
+    .navbar-container {
+        font-family: 'Truculenta', serif;
+        font-size: 28px;
+        padding: 8px;
+        color: #4a2c2a;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        display: flex;              /* Add Flexbox */
+        justify-content: center;    /* Center the ul */
+        align-items: center;        /* Vertically align content */
+        /* Remove height: 40px; or adjust as needed */
+    }
+
+    .content-container {
+        padding: 0.5rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;                /* Reduce padding if needed */
+        margin: 0;                 /* Remove default margin */
+        display: flex;             /* Make list items horizontal */
+        gap: 1rem;                 /* Space between items */
+    }
+}
+
+/* Desktop devices (768px and up) */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        max-width: 600px;          /* Caps the width at 600px */
+        width: 100%;              /* Takes full width up to max-width */
+        margin: 0 auto;
+                  /* Horizontally centers the container */
+        padding: 0 5rem;            /* Optional: Moves padding inside if you want spacing */
+    }
+
+    .navbar-container {
+        font-family: 'Truculenta';
+        font-size: 36px;
+        padding: 1rem;
+        color: #4a2c2a;
+        text-align: center;
+        margin: 1rem 0;
+        border-bottom: 2px solid #e6e0e9;
+        display: flex;              /* Add Flexbox */
+        justify-content: center;    /* Center the ul */
+        align-items: center;        /* Vertically align content */
+        /* Remove height: 50px; or adjust as needed */
+    }
+
+    .content-container {
+        padding: 1rem;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;             /* Horizontal layout */
+    gap: 2rem;                 /* Larger gap for desktop */
+}
+
+a {
+    color: #4a2c2a;
+    text-decoration: none;
+}
